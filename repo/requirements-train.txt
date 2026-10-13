@@ -1,0 +1,10 @@
+-r requirements-inference.txt
+# Pins copied from the original Kaggle notebook install cell.
+scipy<1.16
+scikit-learn<1.8
+datasets
+huggingface_hub
+safetensors
+librosa
+jiwer          # optional: cross-check for the notebook's hand-written CER
+matplotlib

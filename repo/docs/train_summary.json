@@ -1,0 +1,28 @@
+{
+  "stopped": "early stop (no val improvement for 5 evals)",
+  "steps": 750,
+  "final_val": {
+    "main": 0.9110246888968174,
+    "sub": 4.448552354047453,
+    "total": 2.245590395111053,
+    "main_acc": 0.693279064677001,
+    "sub_acc": 0.148153471709716,
+    "tokens": 9582
+  },
+  "best_val": 2.218365233512045,
+  "lora_groups": {
+    "talker": [
+      32,
+      32
+    ],
+    "text_projection": [
+      32,
+      32
+    ],
+    "code_predictor": [
+      8,
+      8
+    ]
+  },
+  "trainable_params": 36028416
+}

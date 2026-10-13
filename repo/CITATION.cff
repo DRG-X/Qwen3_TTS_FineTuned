@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below, and cite Qwen3-TTS and the IndicTTS dataset."
+title: "qwen3-tts-hindi: a LoRA fine-tune of Qwen3-TTS-12Hz-1.7B-Base for Hindi female speech"
+type: software
+authors:
+  - family-names: Goel
+    given-names: Deepansh Raj
+    # TODO: add affiliation / ORCID if desired
+version: 0.1.0
+# TODO: set date-released and repository-code at release time
+repository-code: "https://github.com/<github-username>/qwen3-tts-hindi"
+license: Apache-2.0
+keywords: [text-to-speech, Hindi, LoRA, Qwen3-TTS, low-resource]

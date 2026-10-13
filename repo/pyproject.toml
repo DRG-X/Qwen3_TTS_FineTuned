@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qwen3-tts-hindi"
+version = "0.1.0.dev0"
+description = "Inference helpers and reproducible LoRA training code for a Hindi (female) fine-tune of Qwen3-TTS-12Hz-1.7B-Base"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+dependencies = ["qwen-tts==0.1.1", "soundfile", "numpy<2.3"]
+
+[project.optional-dependencies]
+train = ["scipy<1.16", "scikit-learn<1.8", "datasets", "huggingface_hub", "safetensors", "librosa", "matplotlib"]
+dev = ["pytest", "ruff", "safetensors"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["training"]   # original notebook scripts are kept verbatim
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]

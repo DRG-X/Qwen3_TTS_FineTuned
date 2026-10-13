@@ -1,0 +1,6 @@
+# Inference only. qwen-tts==0.1.1 itself pins transformers==4.57.3 and accelerate==1.12.0.
+# Tested versions: see docs/EVALUATION.md ("what was tested"). The original run used Python 3.12, torch 2.10.0+cu128 (Kaggle).
+qwen-tts==0.1.1
+soundfile
+torch   # not pinned by the author; 2.10.0 (training env) and 2.14.1 (CPU unit tests) are the only versions exercised
+numpy<2.3

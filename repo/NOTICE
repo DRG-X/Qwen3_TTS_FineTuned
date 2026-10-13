@@ -1,0 +1,10 @@
+qwen3-tts-hindi
+This project builds on, and its model weights are derived from:
+  * Qwen3-TTS (Qwen/Qwen3-TTS-12Hz-1.7B-Base, Qwen/Qwen3-TTS-Tokenizer-12Hz) - Apache License 2.0, (c) Alibaba Cloud / Qwen team.
+  * qwen-tts 0.1.1 (Apache-2.0). training/htts_common.py reuses its model structure and documents deviations.
+  * SPRINGLab/IndicTTS-Hindi (derived from the IIT Madras IndicTTS database) - training data; terms of the original
+    IndicTTS licence apply and must be verified before redistributing weights (see docs/LICENSING.md).
+  * Whisper large-v3-turbo (MIT) - used only for evaluation.
+Changes made to the upstream model: LoRA fine-tuning of talker, text_projection and code_predictor, merged into the
+base weights; speaker_encoder removed; one fixed speaker embedding written to codec-embedding row 3000; config converted
+to tts_model_type=custom_voice.

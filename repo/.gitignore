@@ -1,0 +1,27 @@
+# weights / data / audio never go in the GitHub repo (use the Hugging Face model repo)
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.wav
+*.flac
+*.mp3
+work/
+htts_data/
+htts_output/
+qwen3tts-*/
+hf_release/
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+# notebooks / secrets
+.ipynb_checkpoints/
+.env
+*.token
